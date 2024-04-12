@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 8%, rgb(53, 12, 72) 46%, rgb(142, 31, 193) 100%);
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.title h1 {
+    padding-left: 80px;
+    padding-top: 20px;
+    display: flex;
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+}
+
+header h1 p {
+    color: rgb(249, 53, 53);
+    font-family: 'Tiro Kannada', serif;
+    padding-right: 6px;
+    position: relative;
+    bottom: 7px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    font-family: 'Tiro Kannada', serif;
+    font-size: x-large;
+    padding-left: 133px;
+}
+
+nav ul li {
+    padding-right: 70px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, rgb(177, 8, 8) 8%, rgb(234, 61, 61) 46%, rgb(252, 57, 57) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    font-weight: bolder;
+}
+
+.intro {
+    margin: 30px 30px;
+    font-size: 30px;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.intro h1 {
+    font-size: 60px;
+    text-align: left;
+    padding-top: 97px;
+}
+
+.intro h1 span {
+    font-size: 65px;
+    color: rgba(247, 23, 23, 0.918);
+    z-index: 3;
+    transition: 0.7s;
+}
+
+.intro h1 span:hover {
+    color: rgb(54, 235, 255);
+}
+
+.intro p {
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*-------about---------*/
+
+.container {
+    margin: 30px;
+}
+
+#About {
+    padding: 80px 0;
+    color: #ababab;
+    position: relative;
+    z-index: 10;
+    background-color: #080808;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex-basis: 35%;
+}
+
+.col1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, rgb(177, 8, 8) 8%, rgb(234, 61, 61) 46%, rgb(252, 57, 57) 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 60%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.tab-contents ul li span {
+    color: rgb(177, 8, 8);
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* -------services------ */
+
+#Skills {
+    padding: 30px 0;
+    position: relative;
+    z-index: 10;
+    background-color: #080808;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skill-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.skill-list div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.skill-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.skill-list div:hover {
+    background: rgb(188, 43, 255);
+    transform: translateY(-10px);
+}
+
+
+/* ---projects------- */
+
+#Project {
+    padding: 30px 0;
+    position: relative;
+    z-index: 10;
+    background-color: #080808;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 350px;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.2);
+}
+
+.work:hover .layer {
+    height: 100%;
+    display: flex;
+}
+
+
+/* ------contact----- */
+
+.col-left {
+    flex-basis: 40%;
+}
+
+.col-right {
+    flex-basis: 60%;
+    margin-top: 100px;
+}
+
+.col-left p {
+    margin: 30px;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.col-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.col-right h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.social a {
+    margin-right: 35px;
+    font-size: 30px;
+    display: inline-block;
+    color: #ababab;
+    transition: transfom 0.5s;
+    align-items: center;
+}
+
+.col-right a:hover {
+    color: orchid;
+    transform: translateY(-5px);
+}
+
+.btn {
+    width: fit-content;
+    background-color: violet;
+    display: inline-block;
+    margin: 30px 10px;
+    padding: 15px 50px;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #080808;
+    transition: transfom 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(200, 0, 255);
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: #ababab;
+    height: 20vh;
+    color: #080808;
+}
+
+footer p {
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+}

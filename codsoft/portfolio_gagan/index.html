@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resposive.css">
+    <script src="https://kit.fontawesome.com/d4ac7690ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>
+                <a href="index.html">
+                    <p>Gagan</p>
+                </a>Kumar
+            </h1>
+        </div>
+        <NAV>
+            <ul>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#Project">Project</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+
+            </ul>
+        </NAV>
+    </header>
+    <main>
+        <div class="intro">
+            <h1>Hi, <br>I am <span>Gagan</span></h1>
+            <p>Computer Science <br>Student</p>
+        </div>
+        <!-------about--------->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <img src="./gagan.jpg" alt="GaganKumar.D" srcset="">
+                    </div>
+                    <div class="col2">
+                        <h1 class="sub-title">About</h1>
+                        <p>I am Gagan, a dedicated and enthusiastic computer science student with a passion for technology and problem-solving. With a strong foundation in programming and computer science concepts, I am eager to embark on a journey of continuous
+                            learning and innovation.</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('lang')">Languages</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>1-10th  2008-2019</span><br>Maharshi Public School, Mysore</li>
+                                <li><span>11-12th  2019-2020</span><br>SVM College, Mysore</li>
+                                <li><span>B E  2022-Present</span><br>NIE, Mysore</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>PHTHON</li>
+                                <li>Java Script</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="hobbies">
+                            <ul>
+                                <li>CRICKET</li>
+                                <li>DANCING</li>
+                                <li>SINGING</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="lang">
+                            <ul>
+                                <li>ENGLISH</li>
+                                <li>KANNADA</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="Skills">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <div class="skill-list">
+                    <div>
+                        <img src="skill.jpg" alt="" srcset="">
+                        <h2>HTML, CSS , Bootstrap and Java Script
+                            <h2>
+                    </div>
+                    <div>
+                        <img src="download.jpg" alt="" srcset="">
+                        <h2>Data Structures in C and C++
+                            <h2>
+                    </div>
+                    <div>
+                        <img src="download123.jpeg" alt="" srcset="">
+                        <h2>Python Programming
+                            <h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Project">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div class="work">
+                        <img src="./koo123.jpg">
+                        <div class="layer">
+                            <h3>Landing_page</h3>
+                            <p>Koo Landing page using HTML , CSS JavaScript. <br>TECH used: JS,HTML,CSS</p>
+                            <a href="https://gagna-kumar-d-koo-landing-page.netlify.app/" rel="main"><i class="fa-solid fa-link"></i></a>
+                            <a href="koo123.jpg"><i class="fa-solid fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./download.jpeg">
+                        <div class="layer">
+                            <h3>New Project</h3>
+                            <p>Dodo List to Add Data.</p>
+                            <a href="https://gagan-kumar-d-todoapp.netlify.app/"><i class="fa-solid fa-link"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> Email : gagankumardd39@gmail.com </p>
+                        <p> <i class="fa-solid fa-phone"></i> Phone No : 78923407180</p>
+                        <a href="img/Gagan resume 1.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="col-right">
+                        <h3>Social media</h3>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright reserved &copy; to Gagan</p>
+    </footer>
+
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</html>
